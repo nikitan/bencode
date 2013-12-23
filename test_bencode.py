@@ -59,6 +59,8 @@ class TestBdecode(unittest.TestCase):
 
     def test_edge_cases(self):
         self.assertRaises(ValueError, bencode.decode, 'i-0e')
+        self.assertRaises(ValueError, bencode.decode, 'i00e')
+        self.assertRaises(ValueError, bencode.decode, 'i01e')
         self.assertRaises(ValueError, bencode.decode, '')
 
 

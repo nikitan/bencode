@@ -56,6 +56,8 @@ def consume_number(stream):
 
         if not chunk.isdigit():
             return result
+        elif result.startswith('0'):
+            raise ValueError('Invalid number')
 
         next(stream)
         result += chunk
