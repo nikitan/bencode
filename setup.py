@@ -4,8 +4,8 @@ from distutils.core import setup
 
 setup(
     name='Bencode',
-    version='0.1',
-    license='BSD',
+    version='0.0.1',
+    license='MIT',
     description='Pure-Python Bencode implementation',
     author='Nikita Nikishin',
     author_email='nikishin@umich.edu',
